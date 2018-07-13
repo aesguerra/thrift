@@ -7,6 +7,7 @@ class MathOperationsHandler extends MathOperations.Iface {
 
   @throws[TException]
   override def add(a: Int, b: Int): Int = {
+    println(s"add: ${a} + ${b}")
     a + b
   }
 

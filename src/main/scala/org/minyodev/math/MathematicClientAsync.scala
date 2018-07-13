@@ -16,12 +16,9 @@ object MathematicClientAsync {
       )
 
       val amc: AsyncMethodCallback[Integer] = new AddMethodCallback()
-
       client.add(a, b, amc)
-
       amc.onComplete(200)
       amc.onError(throw new Exception("Wuuut?"))
-
     }
     catch {
       case e: TTransportException => e.printStackTrace()
