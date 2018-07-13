@@ -1,3 +1,6 @@
+namespace java services
+namespace py services
+
 service MathOperations {
     i32 multiply(1:i32 factor_1, 2:i32 factor_2),
 
